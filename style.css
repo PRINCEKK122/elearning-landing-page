@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;500;700&display=swap');
+:root {
+    --primary-color: hsl(233, 54%, 16%);
+    --text-color: hsl(232, 10%, 56%);
+    --white-color: hsl(0, 0%, 100%);
+    --primary-bg-color: linear-gradient(to bottom, hsl(13, 100%, 64%), hsl(322, 87%, 55%));
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    padding: 1.6rem;
+    /* border: 3px solid tomato; */
+}
+
+a {
+    color: var(--white-color);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* Utilities */
+.btn {
+    font-size: 1.7rem;
+    padding: 1rem 2.4rem;
+    border-radius: 5rem;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+}
+
+.btn-gradient {
+    background: var(--primary-bg-color);
+    padding: 1.5rem 3.8rem;
+}
+
+/* Header Section */
+.hero-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3.8rem;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 2.6rem;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin-bottom: 2.4rem;
+}
+
+.hero-content a {
+    display: inline-block;
+    margin-bottom: 4rem;
+}
+
+
+.hero-image {
+    width: 100%;
+}
+
+.hero-image img {
+    width: 100%;
+    border: 1px solid red;
+}
+
