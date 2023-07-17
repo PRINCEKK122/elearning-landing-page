@@ -4,6 +4,7 @@
     --text-color: hsl(232, 10%, 56%);
     --white-color: hsl(0, 0%, 100%);
     --primary-bg-color: linear-gradient(to bottom, hsl(13, 100%, 64%), hsl(322, 87%, 55%));
+    --primary-btn-hover-color: hsl(234, 25%, 52%);
 }
 
 *,
@@ -21,7 +22,6 @@ html {
 body {
     font-family: "Plus Jakarta Sans", sans-serif;
     padding: 1.6rem;
-    /* border: 3px solid tomato; */
 }
 
 a {
@@ -39,11 +39,21 @@ a {
 
 .btn-primary {
     background-color: var(--primary-color);
+    transition: all 200ms;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-btn-hover-color);
 }
 
 .btn-gradient {
     background: var(--primary-bg-color);
     padding: 1.5rem 3.8rem;
+    transition: opacity 200ms;
+}
+
+.btn-gradient:hover {
+    opacity: 0.5;
 }
 
 /* Header Section */
@@ -79,6 +89,5 @@ a {
 
 .hero-image img {
     width: 100%;
-    border: 1px solid red;
 }
 
