@@ -82,7 +82,6 @@ a {
     margin-bottom: 4rem;
 }
 
-
 .hero-image {
     width: 100%;
 }
@@ -91,3 +90,39 @@ a {
     width: 100%;
 }
 
+.hero-image-tablet {
+    display: none;
+}
+
+
+/* Tablets section */
+@media only screen and (min-width: 768px) {
+    body {
+        padding: 2.4rem 4rem;
+    }
+
+    
+    .hero {
+        display: flex;
+    }
+
+    .hero-content {
+        margin-bottom: 18.6rem;
+    }
+
+    .hero-nav {
+        margin-bottom:10rem;
+    }
+
+    .hero-image-mobile {
+        display: none;
+    }
+
+    .hero-image-tablet {
+        display: block;
+        transform: scale(2);
+        position: relative;
+        left: 14rem;
+        bottom: 5rem;
+    }
+}
