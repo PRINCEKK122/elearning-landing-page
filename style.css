@@ -22,6 +22,7 @@ html {
 body {
     font-family: "Plus Jakarta Sans", sans-serif;
     padding: 1.6rem;
+    overflow-x: hidden;
 }
 
 a {
@@ -149,4 +150,22 @@ a {
         transform: scale(1);
         object-fit: cover;
     }
+}
+
+/* For larger screens */
+@media only screen and (min-width: 1000px) {
+    body {
+        padding: 2.4rem 16.5rem;
+    }
+
+    .hero-image-tablet {
+        display: none;
+    }
+
+    .hero-image-desktop {
+        display: block;
+        /* transform: scale(3) translate(4rem); */
+    }
+
+    
 }
