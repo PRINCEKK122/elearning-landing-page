@@ -4,7 +4,11 @@
     --text-color: hsl(232, 10%, 56%);
     --white-color: hsl(0, 0%, 100%);
     --primary-bg-color: linear-gradient(to bottom, hsl(13, 100%, 64%), hsl(322, 87%, 55%));
+    --secondary-bg-color: linear-gradient(to bottom, hsl(237, 100%, 64%), hsl(322, 87%, 55%));
     --primary-btn-hover-color: hsl(234, 25%, 52%);
+    --grid-bg-color: hsl(240, 100%, 99%);
+    --card-bg-color: hsl(0, 0%, 100%);
+    --card-link-text-color: hsl(341, 92%, 62%);
 }
 
 *,
@@ -21,7 +25,6 @@ html {
 
 body {
     font-family: "Plus Jakarta Sans", sans-serif;
-    padding: 1.6rem;
     overflow-x: hidden;
 }
 
@@ -41,6 +44,12 @@ a {
 .btn-primary {
     background-color: var(--primary-color);
     transition: all 200ms;
+    position: relative;
+    z-index: 1;
+}
+
+.btn-secondary {
+    background: var(--secondary-bg-color);
 }
 
 .btn-primary:hover {
@@ -58,6 +67,10 @@ a {
 }
 
 /* Header Section */
+.header {
+    padding: 1.6rem;
+}
+
 .hero-nav {
     display: flex;
     align-items: center;
@@ -94,12 +107,77 @@ a {
     height: auto;
 }
 
+/* Main section */
+.grid {
+    padding: 0 1.6rem;
+    display: grid;
+    background-color: var(--grid-bg-color);
+}
+
+.grid-col h2 {
+    font-size: 2.2rem;
+    color: var(--white-color);
+    padding: 2.4rem 2.8rem 3.2rem;
+    border-radius: 1rem;
+    background: var(--primary-bg-color);
+    margin-bottom: 4rem;
+    font-weight: 700;
+}
+
+.grid-card:last-child {
+    margin-bottom: 8rem;
+}
+
+.grid-card {
+    background-color: var(--card-bg-color);
+    padding: 0 2.8rem;
+    margin-bottom: 4rem;
+    border-radius: 1rem;
+}
+
+.grid-card img {
+    width: 5.6rem;
+    height: 5.6rem;
+    transform: translateY(-2.4rem);
+}
+
+.grid-card h3 {
+    font-size: 1.8rem;
+    margin-top: -2rem;
+}
+
+.grid-card p {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    margin-top: 1.6rem;
+    margin-bottom: 2.4rem;
+}
+
+.grid-card a {
+    font-size: 1.6rem;
+    color: var(--card-link-text-color);
+    display: inline-block;
+    margin-bottom: 3.2rem;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    height: 12rem;
+    padding: 0 1.6rem;
+}
+
 /* Tablets section */
 @media only screen and (min-width: 768px) {
     body {
-        padding: 2.4rem 4rem;
         /* overflow-x: hidden; */
         position: relative;
+    }
+    
+    .header {
+        padding: 2.4rem 4rem;
     }
 
     .hero-content {
@@ -123,11 +201,18 @@ a {
         max-height: 100%;
         object-fit: cover;
     }
+
+    .grid {
+        padding: 0 4rem;
+    }
 }
 
 /* For laptops screens */
 @media only screen and (min-width: 1200px) {
     body {
+    }
+    
+    .header {
         padding: 2.4rem 16.5rem;
     }
 
