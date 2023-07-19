@@ -5,6 +5,7 @@
     --white-color: hsl(0, 0%, 100%);
     --primary-bg-color: linear-gradient(to bottom, hsl(13, 100%, 64%), hsl(322, 87%, 55%));
     --secondary-bg-color: linear-gradient(to bottom, hsl(237, 100%, 64%), hsl(322, 87%, 55%));
+    --secondary-bg-color-hover: linear-gradient(to bottom, hsla(237, 100%, 64%, 0.5), hsla(322, 87%, 55%, 0.5));
     --primary-btn-hover-color: hsl(234, 25%, 52%);
     --grid-bg-color: hsl(240, 100%, 99%);
     --card-bg-color: hsl(0, 0%, 100%);
@@ -50,6 +51,12 @@ a {
 
 .btn-secondary {
     background: var(--secondary-bg-color);
+    transition: all 200ms;
+}
+
+.btn-secondary:hover {
+    /* background-color: var(--white-color); */
+    opacity: 0.5;
 }
 
 .btn-primary:hover {
