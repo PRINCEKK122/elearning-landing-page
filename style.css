@@ -124,14 +124,17 @@ a {
     font-weight: 700;
 }
 
-.grid-card:last-child {
+.grid-col {
+    margin-bottom: 4rem;
+}
+
+.grid-col:last-child {
     margin-bottom: 8rem;
 }
 
 .grid-card {
     background-color: var(--card-bg-color);
     padding: 0 2.8rem;
-    margin-bottom: 4rem;
     border-radius: 1rem;
 }
 
