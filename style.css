@@ -135,7 +135,7 @@ a {
     margin-bottom: 4rem;
 }
 
-.grid-col:last-child {
+.grid-row:nth-child(2):last-child {
     margin-bottom: 8rem;
 }
 
