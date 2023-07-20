@@ -10,6 +10,7 @@
     --grid-bg-color: hsl(240, 100%, 99%);
     --card-bg-color: hsl(0, 0%, 100%);
     --card-link-text-color: hsl(341, 92%, 62%);
+    --card-link-text-color-hover: hsl(341, 100%, 83%);
 }
 
 *,
@@ -116,27 +117,19 @@ a {
 
 /* Main section */
 .grid {
-    padding: 0 1.6rem;
+    padding: 0 1.6rem 8rem;
     display: grid;
     background-color: var(--grid-bg-color);
+    row-gap: 4rem;
 }
 
-.grid-col h2 {
+.grid h2 {
     font-size: 2.2rem;
     color: var(--white-color);
     padding: 2.4rem 2.8rem 3.2rem;
     border-radius: 1rem;
     background: var(--primary-bg-color);
-    margin-bottom: 4rem;
     font-weight: 700;
-}
-
-.grid-col {
-    margin-bottom: 4rem;
-}
-
-.grid-row:nth-child(2):last-child {
-    margin-bottom: 8rem;
 }
 
 .grid-card {
@@ -168,6 +161,11 @@ a {
     color: var(--card-link-text-color);
     display: inline-block;
     margin-bottom: 3.2rem;
+    transition: color 300ms;
+}
+
+.grid-card a:hover {
+    color: var(--card-link-text-color-hover);
 }
 
 footer {
@@ -181,8 +179,11 @@ footer {
 
 /* Tablets section */
 @media only screen and (min-width: 768px) {
+    html {
+        font-size: 72.5%;
+    }
+
     body {
-        /* overflow-x: hidden; */
         position: relative;
     }
     
@@ -192,7 +193,7 @@ footer {
 
     .hero-content {
         max-width: 40rem;
-        margin-bottom: 18.6rem;
+        margin-bottom: 10rem;
     }
 
     .hero-nav {
@@ -213,14 +214,26 @@ footer {
     }
 
     .grid {
-        padding: 0 4rem;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2.4rem 2.4rem 8.6rem;
+        gap: 3.2rem 1rem;
+    }
+
+
+    .grid-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    footer {
+        padding-left: 2.4rem;
+        padding-right: 2.4rem;
     }
 }
 
 /* For laptops screens */
 @media only screen and (min-width: 1200px) {
-    body {
-    }
     
     .header {
         padding: 2.4rem 16.5rem;
@@ -234,4 +247,5 @@ footer {
     .hero-nav {
         margin-bottom: 12rem;
     }
+    
 }
