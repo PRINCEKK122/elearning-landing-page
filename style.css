@@ -11,6 +11,8 @@
     --card-bg-color: hsl(0, 0%, 100%);
     --card-link-text-color: hsl(341, 92%, 62%);
     --card-link-text-color-hover: hsl(341, 100%, 83%);
+    --footer-bg-color-hover: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+                            linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%)
 }
 
 *,
@@ -53,11 +55,6 @@ a {
 .btn-secondary {
     background: var(--secondary-bg-color);
     transition: all 200ms;
-}
-
-.btn-secondary:hover {
-    /* background-color: var(--white-color); */
-    opacity: 0.5;
 }
 
 .btn-primary:hover {
@@ -175,6 +172,30 @@ footer {
     background-color: var(--primary-color);
     height: 12rem;
     padding: 0 1.6rem;
+}
+
+footer a.btn {
+    transition: background 3000ms;
+    position: relative;
+    z-index: 1;
+}
+
+footer a.btn::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    z-index: -1;
+    border-radius: 5rem;
+    background: var(--footer-bg-color-hover);
+    transition: all 300ms;
+}
+
+footer a.btn:hover::after {
+    opacity: 1;
 }
 
 /* Tablets section */
