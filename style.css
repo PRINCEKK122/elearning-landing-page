@@ -11,8 +11,8 @@
     --card-bg-color: hsl(0, 0%, 100%);
     --card-link-text-color: hsl(341, 92%, 62%);
     --card-link-text-color-hover: hsl(341, 100%, 83%);
-    --footer-bg-color-hover: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
-                            linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%)
+    --footer-bg-color-hover: linear-gradient(0deg, hsla(0, 0%, 100%, 0.5), hsla(0, 0%, 100%, 0.5)),
+                            linear-gradient(180deg, hsl(237, 100%, 64%) -54.32%, hsl(322, 87%, 55%) 100%);
 }
 
 *,
@@ -243,12 +243,6 @@ footer a.btn:hover::after {
         grid-template-columns: repeat(2, 1fr);
         padding: 2.4rem 2.4rem 8.6rem;
         gap: 3.2rem 1rem;
-    }
-
-    .grid-card {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
     }
 
     footer {
