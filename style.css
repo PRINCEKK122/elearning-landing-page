@@ -201,7 +201,7 @@ footer a.btn:hover::after {
 /* Tablets section */
 @media only screen and (min-width: 768px) {
     html {
-        font-size: 72.5%;
+        font-size: 70.5%;
     }
 
     body {
@@ -240,7 +240,6 @@ footer a.btn:hover::after {
         gap: 3.2rem 1rem;
     }
 
-
     .grid-card {
         display: flex;
         flex-direction: column;
@@ -255,18 +254,32 @@ footer a.btn:hover::after {
 
 /* For laptops screens */
 @media only screen and (min-width: 1200px) {
-    
-    .header {
-        padding: 2.4rem 16.5rem;
+    html {
+        font-size: 75%;
     }
 
-    .hero-image {
-        top: -7rem;
-        right: -16.5rem;
+    .header,
+    .grid, 
+    footer {
+        padding: 2.4rem 16.5rem;
     }
 
     .hero-nav {
         margin-bottom: 12rem;
     }
-    
+
+    .hero-content {
+        margin-bottom: 5rem;
+    }
+
+    .hero-image {
+        top: -7rem;
+        right: -18rem;
+    }
+
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5.6rem 3rem ;
+        padding-bottom: 14rem;
+    }
 }
