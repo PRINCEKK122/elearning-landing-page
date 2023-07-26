@@ -87,7 +87,7 @@ body {
 
 ### Continued development
 
-I am still not really comofortable with CSS Grid, so I will spending time learning this technology and applying them in future front-end mentor challenges, including the React Framework.
+I am still not really comofortable with CSS Grid, so I will be spending time learning this technology and applying them in future front-end mentor challenges, including the React Framework.
 
 ## Author
 
