@@ -49,7 +49,7 @@ Users should be able to:
 
 ### What I learned
 
-1. The fun and challenging aspect of this project is the picture element. It was challenging for me to change the images based on the viewport. But then I stumbled upon the king of CSS Kevin Powell's video on youtube where he teaches the picture element, and he discusss why it is better to use this element than to write this code in CSS. Below is a snippet of how to write the picture element, and for more details about this tag, [click here](https://www.youtube.com/watch?v=Rik3gHT24AM&t=722s) to learn about this element.
+1. The fun and challenging aspect of this project is the picture element. It was challenging for me to change the images based on the viewport. But then I stumbled upon the king of CSS Kevin Powell's video on youtube where he teaches the picture element, and he discusses why it is better to use this element than to write this code in CSS. Below is a snippet of how to write the picture element, and for more details about this tag, [click here](https://www.youtube.com/watch?v=Rik3gHT24AM&t=722s) to learn about this element.
 
 ```html
 <picture>
