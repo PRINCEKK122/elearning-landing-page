@@ -73,7 +73,7 @@ Users should be able to:
 </picture>
 ```
 
-2. At times, hanging footers can be a little bit pain, I followed Kevin Powell and this was the code I used to solve the issue.
+2. At times, hanging footers can be a little bit pain, I followed Kevin Powell and this was the code I wrote to solve the issue.
 ```
 body {
     display: flex;
